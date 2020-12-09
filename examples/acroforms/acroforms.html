@@ -33,11 +33,25 @@ limitations under the License.
     .page {
       position: relative;
     }
+    body > .wrapper {
+      display: flex;
+    }
+    .json-viewer {
+      border: 1px solid black;
+      margin: 20px;
+      padding: 20px;
+      font-family: monospace;
+      font-size: 12px;
+      flex-basis: 300px;
+    }
     </style>
   </head>
 
   <body>
-    <div id="pageContainer"></div>
+    <div class="wrapper">
+      <pre id="json-viewer" class="json-viewer"></pre>
+      <div id="pageContainer"></div>
+    </div>
 
     <script src="acroforms.js"></script>
   </body>
